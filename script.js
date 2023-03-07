@@ -75,7 +75,7 @@ function createCard(value){
     Release.setAttribute('class','releasedate');
     Release.innerText=`Release Date:${data.released}`;
     let button=document.createElement('button');
-    button.setAttribute("type","button");
+    button.setAttribute("type","reset");
     button.setAttribute("class","btn btn-secondary");
     button.innerText="click here characters";
     button.onclick=function(){
