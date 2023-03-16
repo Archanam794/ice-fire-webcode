@@ -96,7 +96,7 @@ contain.appendChild(carder);
 /////////////////////////////////////////
  function handleSearch(target) {
     const search = target.value.toLowerCase();
-    console.log(datav);
+    //console.log(datav);
     const searchMatch = datav.filter((element) => {
      
       return  element.name.toLowerCase().includes(search);
@@ -122,7 +122,8 @@ contain.appendChild(carder);
         const res=await fetch(data[i]);
         const res1=await res.json();
         chapsData.push(res1.name); 
-        console.log(chapsData); newDIV.innerHTML=`<h2>Characters</h2>
+       // console.log(chapsData);
+       newDIV.innerHTML=`<h2>Characters</h2>
         <p id="p1"> ${chapsData}</p>
         <button onclick="hidePopup()">Close</button>`
        
